@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Visor</title>
+    <link rel="stylesheet" href="css/leaflet.css">
+    <script src="js/leaflet.js"></script>
+    <script type="text/javascript" src="js/Leaflet.Coordinates-0.1.5.min.js"></script>
+    <link rel="stylesheet" href="css/Leaflet.Coordinates-0.1.5.css" />
+    <link rel="stylesheet" href="webfonts/font-awesome/css/font-awesome.min.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="css/leafletDraw.css" />
+    <script src="js/leaflet.draw.js"></script>
+
+    <link rel="stylesheet" href="css/Control.Coordinates.css" />
+    <script src="js/Control.Coordinates.js"></script>
+
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+
+</head>
+
+<body>
+
+
+
+
+
+
+    <div class="container animated fadeInLeft" id="container">
+        <h1>¿Desea efectuar el Registro Espacial del lugar de interés?</h1>
+        <p>La informacion se guardara en la base de datos </p>
+        <div class="form">
+
+            <div class="group">
+                <p class="label2" for="">Nombre del objeto espacial</p>
+                <input class="camp" type="text" placeholder="Descripción" id="text">
+            </div>
+
+
+
+            <div class="group">
+                <p class="label2" style="flex-wrap: nowrap;" for="">Latitud&nbsp;(N):</p>
+                <input class="camp" type="text" placeholder="" id="ltdForm">
+            </div>
+
+            <div class="group">
+                <p class="label2" style="flex-wrap: nowrap;" for="">Longitud&nbsp;(W):</p>
+                <input class="camp" type="text" placeholder="" id="lngForm">
+            </div>
+        </div>
+        <details>
+            <summary>
+                <div class="button redButton" onclick="cerrarVentana('0')">Cancelar</div>
+                <div class="button greenButton" onclick="cerrarVentana('1')">Guardar</div>
+
+                <div class="details-modal-overlay"></div>
+            </summary>
+        </details>
+    </div> <!-- Eso es nuevo, es el html con el formulario de registro -->
+
+
+
+
+
+
+    <div id="map">
+        <!-- div con id map -->
+    </div>
+
+    <script src="js/labels.js"></script>
+
+    <script>
+/body>
+
+</html>
